@@ -45,10 +45,10 @@ O domínio é composto pelas seguintes entidades:
 ### Passo a Passo
 
 1.  **Clone o repositório** (assumindo que o código está em um repositório):
-    ```bash
-    # Exemplo: git clone [URL_DO_REPOSITORIO]
+
+    # Exemplo: git clone https://github.com/L-A-N-E/GS_2_Nicolas_-_Lucas_Java
     # cd mental-health-api
-    ```
+
 
 2.  **Configuração do Banco de Dados (H2)**:
     O projeto está configurado para usar o **H2 Database** em modo **em memória**. A configuração está no arquivo `src/main/resources/application.properties`:
