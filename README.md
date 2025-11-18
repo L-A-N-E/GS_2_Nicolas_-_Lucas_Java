@@ -46,11 +46,13 @@ O domínio é composto pelas seguintes entidades:
 
 1.  **Clone o repositório**:
 
-    ### Exemplo: git clone https://github.com/L-A-N-E/GS_2_Nicolas_-_Lucas_Java
-    ### cd mental-health-api
+    '''
+        Exemplo: git clone https://github.com/L-A-N-E/GS_2_Nicolas_-_Lucas_Java
+        cd mental-health-api
+    '''
 
 
-2.  **Configuração do Banco de Dados (H2)**:
+3.  **Configuração do Banco de Dados (H2)**:
     O projeto está configurado para usar o **H2 Database** em modo **em memória**. A configuração está no arquivo `src/main/resources/application.properties`:
     ```properties
     spring.datasource.url=jdbc:h2:mem:saudementaldb
@@ -58,7 +60,7 @@ O domínio é composto pelas seguintes entidades:
     ```
     O parâmetro `create-drop` garante que o esquema do banco seja criado automaticamente ao iniciar a aplicação e destruído ao parar. O componente `DataSeeder` (item 5) é responsável por carregar os dados iniciais (seeds).
 
-3.  **Executar a Aplicação**:
+4.  **Executar a Aplicação**:
     Utilize o Maven para compilar e executar o projeto:
     ```bash
     mvn clean install
