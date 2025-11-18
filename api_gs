@@ -1,0 +1,297 @@
+type: collection.insomnia.rest/5.0
+name: Teste_Lucas
+meta:
+  id: wrk_292b0f67f2ee41e6bb77fbd3ca85226b
+  created: 1763430824906
+  modified: 1763430824906
+  description: ""
+collection:
+  - name: Pacientes
+    meta:
+      id: fld_de25f521fcdc471c90559421dce0fd1d
+      created: 1763430855966
+      modified: 1763431144375
+      sortKey: -1763430855966
+      description: ""
+    children:
+      - url: "{{ _.baseURL }}/pacientes"
+        name: Listar Pacientes
+        meta:
+          id: req_fb5c34d69904477d8675259b342145e2
+          created: 1763430828150
+          modified: 1763431116962
+          isPrivate: false
+          description: ""
+          sortKey: -1763430863706
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/pacientes"
+        name: Criar Paciente
+        meta:
+          id: req_bd33372309f1458f912fed8b2a9ee34e
+          created: 1763430868563
+          modified: 1763430961971
+          isPrivate: false
+          description: ""
+          sortKey: -1763430863306
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome": "João da Silva",
+              "email": "joao.silva@exemplo.com",
+              "dataNascimento": "1990-01-01",
+              "telefone": "11999998888"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/pacientes/3"
+        name: Atualizar Paciente
+        meta:
+          id: req_bb43fe44e0bf4ecd9b350ee98f0b04ba
+          created: 1763430967000
+          modified: 1763431037888
+          isPrivate: false
+          description: ""
+          sortKey: -1763430863406
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome": "João da Silva",
+              "email": "aaaaaaa@exemplo.com",
+              "dataNascimento": "1990-01-01",
+              "telefone": "11999998888"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/pacientes/1"
+        name: Buscar Paciente por ID
+        meta:
+          id: req_ef76d323f4644558bc7cc111aadb0806
+          created: 1763431062876
+          modified: 1763431118565
+          isPrivate: false
+          description: ""
+          sortKey: -1763430863656
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/pacientes/4"
+        name: Deletar Paciente
+        meta:
+          id: req_61e31c0a83164d7c99bfdbbe30041b09
+          created: 1763431094633
+          modified: 1763431128498
+          isPrivate: false
+          description: ""
+          sortKey: -1763430863206
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Registros Diários
+    meta:
+      id: fld_c7af736825ec44b9b46ac4920507f678
+      created: 1763431157897
+      modified: 1763431323985
+      sortKey: -1763377023498
+      description: ""
+    children:
+      - url: "{{ _.baseURL }}/registros-diarios"
+        name: Listar Registros Diários
+        meta:
+          id: req_f8622547d461442d9bc660ad77971b68
+          created: 1763431157898
+          modified: 1763431285376
+          isPrivate: false
+          description: ""
+          sortKey: -1763430863706
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/registros-diarios"
+        name: Criar Registros Diários
+        meta:
+          id: req_8a112832c616445d929b26da85ce78e9
+          created: 1763431157899
+          modified: 1763431308671
+          isPrivate: false
+          description: ""
+          sortKey: -1763430863306
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "pacienteId": 1,
+              "dataRegistro": "2025-11-14",
+              "nivelHumor": 4,
+              "nivelAnsiedade": 2,
+              "horasSono": 7,
+              "notas": "Dia produtivo e com pouca ansiedade."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/registros-diarios/1"
+        name: Atualizar Registros Diários
+        meta:
+          id: req_790300c2a352494b9a5df686e1657d0d
+          created: 1763431157900
+          modified: 1763431305308
+          isPrivate: false
+          description: ""
+          sortKey: -1763430863406
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "pacienteId": 1,
+              "dataRegistro": "2025-11-14",
+              "nivelHumor": 4,
+              "nivelAnsiedade": 2,
+              "horasSono": 7,
+              "notas": "Dia produtivo e com pouca ansiedade."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/registros-diarios/4"
+        name: Buscar Registros Diários por ID
+        meta:
+          id: req_d2897d23eeaa4974b648c0979db04d32
+          created: 1763431157901
+          modified: 1763431299219
+          isPrivate: false
+          description: ""
+          sortKey: -1763430863656
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.baseURL }}/registros-diarios/4"
+        name: Deletar Registros Diários
+        meta:
+          id: req_72f13b29048a47fda0edc0daacd3ca88
+          created: 1763431157902
+          modified: 1763431313543
+          isPrivate: false
+          description: ""
+          sortKey: -1763430863206
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_300cc974b11d784066d6a7ce837ffd58c7cb4a77
+    created: 1763430824912
+    modified: 1763430824912
+environments:
+  name: Base Environment
+  meta:
+    id: env_300cc974b11d784066d6a7ce837ffd58c7cb4a77
+    created: 1763430824909
+    modified: 1763430899425
+    isPrivate: false
+  data:
+    baseURL: http://localhost:8080
