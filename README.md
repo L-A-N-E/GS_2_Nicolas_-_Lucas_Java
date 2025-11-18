@@ -46,10 +46,10 @@ O domínio é composto pelas seguintes entidades:
 
 1.  **Clone o repositório**:
 
-    '''
-        Exemplo: git clone https://github.com/L-A-N-E/GS_2_Nicolas_-_Lucas_Java
-        cd mental-health-api
-    '''
+    ```bash
+    git clone https://github.com/L-A-N-E/GS_2_Nicolas_-_Lucas_Java
+    cd mental-health-api
+    ```
 
 
 3.  **Configuração do Banco de Dados (H2)**:
