@@ -1,5 +1,9 @@
 # API RESTful para Monitoramento de Saúde Mental e Bem-Estar
 
+Alunos:
+Nicolas Haubricht Hainfellner
+Lucas Henzo Ide Yuki
+
 ## 1. Contexto e Objetivo do Projeto
 
 A saúde mental e o bem-estar são prioridades globais, e a tecnologia surge como uma aliada poderosa para o monitoramento e apoio. Este projeto consiste no desenvolvimento de uma **API RESTful** em Java com Spring Boot para uma plataforma de monitoramento de saúde mental, conforme os requisitos da Global Solution - O Futuro do Trabalho.
