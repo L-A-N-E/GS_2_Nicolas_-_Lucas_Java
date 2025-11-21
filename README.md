@@ -1,7 +1,9 @@
 # API RESTful para Monitoramento de Saúde Mental e Bem-Estar
 
 Alunos:
+
 Nicolas Haubricht Hainfellner
+
 Lucas Henzo Ide Yuki
 
 ## 1. Contexto e Objetivo do Projeto
